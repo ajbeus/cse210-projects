@@ -33,7 +33,7 @@ class Program
             Console.WriteLine(scripture.GetDisplayScripture());
             Console.WriteLine("\nPress Enter to hide words or type 'quit' to exit.");
 
-            if (Console.ReadLine()?.ToLower() == "quit" || scripture.AllHidden())
+            if (Console.ReadLine()?.ToLower() == "quit"|| scripture.AllHidden())
                 break;
 
             scripture.HideRandomWords(3);
